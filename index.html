@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="indexStyle.css">
+    <script src="indexScript.js" defer></script>
+
+</head>
+<body>
+
+        <header><h1>Guess that Human</h1></header>
+            <p> </p>
+
+            <div class="draggableContainer">
+                <div class="box" draggable="true" id="box1">Filipino</div>
+                <div class="box" draggable="true" id="box2">British</div>
+                <div class="box" draggable="true" id="box3">Yemen</div>
+                <div class="box" draggable="true" id="box4">Australian</div>
+                <div class="box" draggable="true" id="box5">American</div>
+                <div class="box" draggable="true" id="box6">Mexican</div>
+                <div class="box" draggable="true" id="box7">whaat</div>
+
+            </div>
+            <div class="droppableContainer">
+                <div class="droppable" data-draggable-id="box1">Asia</div>
+                <div class="droppable" data-draggable-id="box2">Europe</div>
+                <div class="droppable" data-draggable-id="box3">Africa</div>
+                <div class="droppable" data-draggable-id="box4">Australia</div>
+                <div class="droppable" data-draggable-id="box5">North America</div>
+                <div class="droppable" data-draggable-id="box6">South America</div>
+                <div class="droppable" data-draggable-id="box7">Antartica</div>
+                <div class="droppable">Remarks:<p id="remarks"></p>
+                Score:<p id="scores"></p>
+                </div>
+               
+            </div>
+    
+</body>
+</html>

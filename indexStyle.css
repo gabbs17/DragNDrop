@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.draggableContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 50px;
+    background-color: #3498db;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.draggableFormat {
+    opacity: 0.5;
+}
+
+.droppableContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.droppable {
+    width: 150px;
+    height: 80px;
+    border: 2px dashed #2ecc71;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.droppable p {
+    margin: 5px 0;
+}
+
+.droppable::before {
+    content: attr(data-draggable-id);
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.droppable:hover {
+    background-color: rgba(46, 204, 113, 0.2);
+}
