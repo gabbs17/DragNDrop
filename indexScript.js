@@ -36,12 +36,12 @@ droppableElement.forEach(element=>{
             if(droppedElementId===dropZoneId){
                 //console.log('tama');
                 score+=1;
-                document.getElementById('remarks').innerText = "Tama!";
+                document.getElementById('remarks').innerText = "Korique:>";
                 document.getElementById('scores').innerText = score;
 
             }else{
                 //console.log('mali');
-                document.getElementById('remarks').innerText = "Mali!";
+                document.getElementById('remarks').innerText = "Wrong :<";
 
 
             }//end of if
